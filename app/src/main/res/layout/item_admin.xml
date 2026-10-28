@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:background="@drawable/bg_card_rounded"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header: Name + Role Tag -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvAdminItemName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Admin Name"
+            android:textColor="@color/text_main"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAdminRoleTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_tag"
+            android:backgroundTint="@color/tag_yellow_bg"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:text="ADMIN"
+            android:textColor="@color/warning"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvAdminStatusTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tag"
+            android:backgroundTint="@color/tag_green_bg"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="3dp"
+            android:text="ACTIVE"
+            android:textColor="@color/success"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvAdminItemUid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:alpha="0.7"
+        android:text="UID: ..."
+        android:textColor="@color/text_muted"
+        android:textSize="11sp" />
+
+    <TextView
+        android:id="@+id/tvAdminPermissionsSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lineSpacingExtra="2dp"
+        android:text="Permissions: ..."
+        android:textColor="@color/info"
+        android:textSize="11sp" />
+
+    <!-- Action buttons (Hidden for Owner) -->
+    <LinearLayout
+        android:id="@+id/layoutAdminActions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEditAdminPermissions"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_primary"
+            android:text="PERMISSIONS"
+            android:textColor="@color/text_main"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnToggleAdminSuspend"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button_warning"
+            android:text="SUSPEND"
+            android:textColor="@color/warning"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/btnRemoveAdmin"
+            android:layout_width="0dp"
+            android:layout_height="38dp"
+            android:layout_weight="0.9"
+            android:background="@drawable/bg_button_danger"
+            android:text="REVOKE"
+            android:textColor="@color/danger"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+</LinearLayout>

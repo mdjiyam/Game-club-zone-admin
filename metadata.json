@@ -1,0 +1,6 @@
+{
+  "name": "GameClubZone Admin",
+  "description": "Native Android Admin Panel for GameClubZone tournament, matches, users, withdrawals and system management",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

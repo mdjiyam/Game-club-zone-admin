@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_sheet"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_card_rounded"
+        android:padding="12dp"
+        android:src="@drawable/ic_delete"
+        app:tint="@color/danger" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Delete Match?"
+        android:textColor="@color/text_main"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDeleteMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Would you like to refund entry fees to all participants before deleting, or delete directly?"
+        android:textColor="@color/text_muted"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnRefundAndDelete"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_button_primary"
+        android:text="Refund &amp; Delete"
+        android:textColor="@color/text_main"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnDeleteDirectly"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_button_danger"
+        android:text="Delete Directly"
+        android:textColor="@color/text_main"
+        android:textStyle="bold"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/btnCancelDelete"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@android:color/transparent"
+        android:text="Cancel"
+        android:textColor="@color/text_muted"
+        android:textStyle="bold" />
+
+</LinearLayout>
